@@ -30,7 +30,7 @@ export default class Tooltip {
     document.body.appendChild(tooltipBox);
     this.tooltipBox = tooltipBox;
   }
-  // cria a tooltip e adiciona os eventos
+  // cria a tooltip e adiciona os eventos 
   //de mousemove e mouseleave ao target
   onMouseOver(event) {
     //cria a tooltipbox e a coloca em uma propriedade
