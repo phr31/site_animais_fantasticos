@@ -3,14 +3,14 @@ export default class Accordion {
     this.accordionList = document.querySelectorAll(list);
     this.activeClass = "ativo";
   }
-  toogleAccordion(item) {
+  toggleAccordion(item) {
     item.classList.toggle(this.activeClass);
     item.nextElementSibling.classList.toggle(this.activeClass);
   }
   //adiciona os eventos ao accordion
   addAccordionEvent() {
     this.accordionList.forEach((item) => {
-      item.addEventListener("click", () => this.toogleAccordion(item));
+      item.addEventListener("click", () => this.toggleAccordion(item));
     });
   }
   //iniciar função
