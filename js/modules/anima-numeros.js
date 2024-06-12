@@ -29,13 +29,15 @@ export default class AnimaNumeros {
       this.constructor.incrementarNumero(numero);
     });
   }
-
+//função que ocorre quando a mutação ocorrer
   handleMutation(mutation) {
     if (mutation[0].target.classList.contains(this.observerClass)) {
       this.observer.disconnect();
       this.animaNumeros();
     }
   }
+  //Adiciona o MutationObserver para verificar
+  //quanto a classe ativo é adicionada ao element target
   addMutationObserver() {
     this.observer = new MutationObserver(this.handleMutation);
     this.observer.observe(this.observerTarget, { attributes: true });
