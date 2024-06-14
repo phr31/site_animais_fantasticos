@@ -32,7 +32,6 @@ export default class Funcionamento {
       this.dadosAgora();
       this.ativaAberto();
     }
-    console.log(this);
     return this;
   }
 }

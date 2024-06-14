@@ -25,7 +25,11 @@ export default class MenuMobile {
   }
   addMenuMobileEvents() {
     this.events.forEach((evento) => {
-      this.menuButton.addEventListener(evento, this.openMenu);
+      if (evento === "touchstart") {
+        evento.preventDefault;
+      } else {
+        this.menuButton.addEventListener(evento, this.openMenu);
+      }
     });
   }
   init() {
