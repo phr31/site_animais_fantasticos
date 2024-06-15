@@ -11,17 +11,19 @@
   align-items: center;
 }
 
-.modal-container.ativo{
+.modal-container.ativo {
   display: flex;
 }
 
 .modal {
   background: #fff;
-  min-width: 300px;
+  max-width: 600px;
+  width: 80vw;
   padding: 40px;
   border: 10px solid #fb5;
   box-shadow: 0 0 0 10px #fff;
   position: relative;
+  box-sizing: border-box;
 }
 
 @keyframes modal {
@@ -35,8 +37,8 @@
   }
 }
 
-.ativo .modal{
-  animation: modal .3s forwards;
+.ativo .modal {
+  animation: modal 0.3s forwards;
 }
 
 .fechar {
@@ -66,6 +68,8 @@
   width: 100%;
   padding: 0.7rem 0.5rem;
   box-sizing: border-box;
+  border: 2px solid #222;
+  border-radius: 0px;
 }
 
 .modal button[type="submit"] {
@@ -78,4 +82,8 @@
   color: #fff;
   background: #e54;
   margin-top: 1rem;
+}
+[data-modal="abrir"]:hover i {
+  transform: rotate(180deg);
+  transition: all 0.5s ease-in-out;
 }

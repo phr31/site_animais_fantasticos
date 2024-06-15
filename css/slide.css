@@ -76,7 +76,7 @@
   margin: 20px 0;
 }
 .arrow-nav button {
-  background: rgb(108, 16, 194);
+  background: #e54;
   font-family: "IBM Plex Mono", monospace;
   cursor: pointer;
   border: none;
